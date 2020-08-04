@@ -1,0 +1,98 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+/* ------------------- menu ---------------------- */
+.top .area {
+    width: 1400px;
+    height: 100px;
+    /* margin: 0 auto; */
+
+    border: 1px solid black;
+
+    display: flex;
+}
+
+.top .logo {
+    flex: 1;
+    border: 1px solid red;
+}
+
+.top .nav {
+    flex: 3;
+    border: 1px solid blue;
+}
+
+.top .sign {
+    flex: 1;
+    border: 1px solid green;
+}
+/* ------------------- menu ---------------------- */
+
+/* ------------------- banner ---------------------- */
+.banner .area {
+    width: 1400px;
+    height: 100vh;
+    /* margin: 0 auto; */
+
+    border: 1px solid purple;
+}
+/* ------------------- banner ---------------------- */
+
+
+/* ------------------- food ---------------------- */
+.food .area {
+    position: relative;
+    width: 1400px;
+
+    border: 1px solid greenyellow;
+}
+
+.food .nav {
+    position: relative;
+    height: 5vh;
+    border: 1px solid blue;
+}
+
+.food .foodBox {
+    position: relative;
+    width: 100%;
+    height: 95vh;
+    border: 1px solid red;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.food .foodBox div {
+    position: relative;
+    width: 33.3333%;
+    height: 50%;
+
+    border: 1px solid gold;
+}
+/* ------------------- food ---------------------- */
+
+
+/* ------------------- contact ---------------------- */
+.contact .area {
+    position: relative;
+    width: 1400px;
+
+    border: 1px solid purple;
+}
+
+.contact .addr {
+    text-align: left;
+}
+
+.contact .sns {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}

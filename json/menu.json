@@ -1,0 +1,169 @@
+[
+    {
+        "type" : "BRAND",
+        "text" : "INTRODUCE"
+    },
+    {
+       "type" : "MENU",
+       "text" : "NEW" 
+    },
+    {
+       "type" : "MENU",
+       "text" : "BREAD" 
+    },
+    {
+       "type" : "MENU",
+       "text" : "STARTER" 
+    },
+    {
+       "type" : "MENU",
+       "text" : "PASTA" 
+    },
+    {
+       "type" : "MENU",
+       "text" : "PIZZA" 
+    },
+    {
+       "type" : "MENU",
+       "text" : "RICE & RISOTTO" 
+    },
+    {
+       "type" : "MENU",
+       "text" : "STEAK" 
+    },
+    {
+       "type" : "MENU",
+       "text" : "DESSERT" 
+    },
+    {
+       "type" : "MENU",
+       "text" : "WINE" 
+    },
+    {
+       "type" : "MENU",
+       "text" : "BEVERAGE" 
+    },
+    {
+       "type" : "STORE",
+       "text" : "SEARCH" 
+    },
+    {
+       "type" : "STORE",
+       "text" : "CONCEPT" 
+    },
+    {
+       "type" : "MEMBERSHIP",
+       "text" : "멤버십 소개" 
+    },
+    {
+       "type" : "MEMBERSHIP",
+       "text" : "멤버십 가입" 
+    },
+    {
+       "type" : "EVENT",
+       "text" : "이벤트" 
+    },
+    {
+       "type" : "EVENT",
+       "text" : "제휴 & 상품권" 
+    },
+    {
+       "type" : "EVENT",
+       "text" : "MAD CHALLENGE" 
+    },
+    {
+       "type" : "banner",
+       "src" : "../images/banner1.jpg" 
+    },
+    {
+       "type" : "banner",
+       "src" : "../images/banner2.jpg" 
+    },
+    {
+       "type" : "banner",
+       "src" : "../images/banner3.jpg" 
+    },
+    {
+       "type" : "banner",
+       "src" : "../images/banner4.jpg" 
+    },
+    {
+       "type" : "banner",
+       "src" : "../images/banner5.jpg" 
+    },
+    {
+       "type" : "banner",
+       "src" : "../images/banner6.jpg" 
+    },
+    {
+       "type" : "banner",
+       "src" : "../images/banner7.jpg" 
+    },
+    {
+       "type" : "banner",
+       "src" : "../images/banner8.jpg" 
+    },
+    {
+       "type" : "new",
+       "src" : "../images/new1.jpg",
+       "title_ko" : "갈릭 봉봉 샐러드",
+       "title_en" : "(Garlic Bong Bong Salad)",
+       "price" : "18,300"
+    },
+    {
+       "type" : "new",
+       "src" : "../images/new2.jpg",
+       "title_ko" : "갈릭 스파이시 씨푸드 파스타",
+       "title_en" : "(Garlic Spicy Seafood Pasta)",
+       "price" : "23,800"
+    },
+    {
+       "type" : "new",
+       "src" : "../images/new3.jpg",
+       "title_ko" : "갈릭 폭탄 치킨 피자",
+       "title_en" : "(Garlic Bomb Chicken Pizza)",
+       "price" : "24,800"
+    },
+    {
+       "type" : "new",
+       "src" : "../images/new4.jpg",
+       "title_ko" : "바질 갈릭 크림 부라타 파스타",
+       "title_en" : "(Basil Garlic Cream Burrata Pasta)",
+       "price" : "24,800"
+    },
+    {
+       "type" : "new",
+       "src" : "../images/new5.jpg",
+       "title_ko" : "트위스트 갈릭 스테이크",
+       "title_en" : "Twist Garlic Steak",
+       "price" : "54,900"
+    },
+    {
+       "type" : "new",
+       "src" : "../images/new6.jpg",
+       "title_ko" : "프리미엄 갈릭 플레이트",
+       "title_en" : "(Premium Garlic Plate)",
+       "price" : "3,000"
+    },
+    {
+       "type" : "bread",
+       "src" : "../images/bread1.png",
+       "title_ko" : "갈릭 빠네",
+       "title_en" : "(Garlic Pane)",
+       "price" : "5,900"
+    },
+    {
+       "type" : "bread",
+       "src" : "../images/bread2.png",
+       "title_ko" : "드라큘라 킬러",
+       "title_en" : "(Dracula Killer)",
+       "price" : "16,800"
+    },
+    {
+       "type" : "",
+       "src" : "",
+       "title_ko" : "",
+       "title_en" : "",
+       "price" : ""
+    }
+]

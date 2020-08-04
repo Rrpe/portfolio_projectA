@@ -1,0 +1,176 @@
+@charset "UTF-8";
+
+.top.on {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+
+.top .area {
+    /* position: relative; */
+    width: 1400px;
+    height: 80px;
+    margin: 0 auto;
+
+    background-color: #FFF;
+    display: flex;
+    
+    border: 0px solid black;
+}
+
+/* ------ logo ------ */
+.top .logo {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    border: 0px solid red;
+}
+
+.logo a {
+    height: 30px;
+}
+
+.top .logo img {
+    width: 70%;
+    height: auto;
+    border: 0px solid red;
+}
+
+/* ------ 예약 버튼 ------ */
+.top .nav .res {
+    padding: 5px 15px;
+    background-color: rgb(143, 28, 28);
+    color: #FFF;
+}
+
+.top .nav .res:hover {
+    padding: 5px 15px;
+    background-color: rgb(0, 0, 0);
+    color: #FFF;
+}
+
+/* ------ nav ------ */
+.top .nav {
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0px solid blue;
+}
+
+.top .nav .list {
+    /* width: 100%; */
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 0px solid gold;
+}
+
+.top .nav .list li {
+    display: block;
+    height: 100%;
+    padding: 0 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    border: 0px solid red;
+}
+
+.top .nav .list > li > p {
+    font-size: 16px ;
+    font-weight: 600;
+    color: rgb(129, 129, 129);
+}
+
+.top .nav .sub {
+    position: absolute;
+    z-index: 9999;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    /* height: 40px; */
+    background-color: #FFF;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    border: 0px solid red;
+    border-top: 1px solid lightgrey;
+}
+
+.top .nav .sub li {
+    height: auto;
+    margin: 0px 20px;
+    padding: 10px 0px;
+    cursor: pointer;
+    
+    border-bottom: 2px solid #FFF;
+}
+
+.top .nav .sub li:hover {
+    
+    border-bottom: 2px solid #111;
+}
+
+.top .nav .sub p {
+    
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 39px;
+    color: #818181;
+
+    /* border-bottom: 2px solid #000; */
+}
+
+.top .nav li:hover p {
+    color: #111;
+}
+
+/* ------ sign ------ */
+.top .sign {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0px solid green;
+}
+
+.top .sign .list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top .sign .list li {
+    padding: 0 10px;
+}
+
+.top .sign .list li a {
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.top .sign .list li:hover a {
+    color: #818181;
+}
+
+.top .sign .ver_line {
+    width: 1px;
+    height: 11px;
+    background-color: black;
+    margin-top: 4px;
+}

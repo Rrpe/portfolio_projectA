@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+.contact .area {
+    position: relative;
+    width: 1400px;
+    margin: 0 auto;
+
+    background-color: #FFF;
+
+    border: 0px solid purple;
+}
+
+.contact .addr {
+    margin: 40px 0;
+    padding-left: 10px;
+    text-align: left;
+}
+
+.contact .addr p {
+    color: #111;
+    font-size: 16px;
+    font-weight: 400;
+    
+}
+
+.contact .sns {
+    width: 100%;
+    height: auto;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.contact .sns a {
+    margin-right: 24px;
+
+    font-size: 22px;
+    line-height: 1.2;
+
+    cursor: pointer;
+    transition: all 0.1s;
+}
+
+.contact .sns a:hover {
+    color: #818181;
+}
+
+.contact .bot {
+    margin: 30px 0;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact .bot .left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact .bot .left li {
+    padding: 0 10px;
+}
+
+.contact .bot .left a {
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.contact .bot .left li:first-child a {
+    font-weight: 600;
+}
+
+.contact .bot .left li:hover a {
+    color: #818181;
+}
+
+.contact .bot .right {
+    display: flex;
+}
+
+.contact .bot .right a {
+    margin-right: 30px;
+    font-size: 18px;
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+.contact .ver_line {
+    width: 1px;
+    height: 11px;
+    background-color: black;
+    margin-top: 4px;
+}

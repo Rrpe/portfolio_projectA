@@ -19,7 +19,11 @@
     <!-- <link rel="stylesheet" href="./css/index.css"> -->
     <link rel="stylesheet" href="./css/topmenu.css">
     <link rel="stylesheet" href="./css/banner.css">
+    <link rel="stylesheet" href="./css/brand.css">
     <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/store.css">
+    <link rel="stylesheet" href="./css/membership.css">
+
     <link rel="stylesheet" href="./css/contact.css">
 
 
@@ -27,8 +31,6 @@
         integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
         integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
-    <script src="http://code.jquery.com/jquery-migrate-3.3.1.min.js"
-        integrity="sha256-APllMc0V4lf/Rb5Cz4idWUCYlBDG3b0EcN1Ushd3hpE=" crossorigin="anonymous"></script>
     <script src="./lib/slick.js"></script>
     <script src="./js/main.js"></script>
 
@@ -36,7 +38,7 @@
 
 <body>
 
-    <!-- top -->
+    <!-- top menu -->
     <div class="top">
         <div class="area">
             <!-- 탑 좌측 -->
@@ -57,7 +59,6 @@
                 </p>
                 <!-- 탑 메뉴 -->
                 <ul class="list">
-
                     <li>
                         <p>
                             BRAND
@@ -85,13 +86,13 @@
                     </li>
                 </ul>
                 <!-- 탑 서브 메뉴 -->
-                <div class="subBox">
+                <!-- <div class="subBox">
                     <ul class="sub"></ul>
                     <ul class="sub"></ul>
                     <ul class="sub"></ul>
                     <ul class="sub"></ul>
                     <ul class="sub"></ul>
-                </div>
+                </div> -->
             </div>
 
             <!-- 탑 우측 -->
@@ -124,9 +125,9 @@
             </div>
 
         </div>
-    </div> <!-- top -->
+    </div>
 
-    <div class="first page active">
+    <div class="first">
         <!-- banner -->
         <div class="banner">
             <div class="area">
@@ -140,72 +141,127 @@
         <!-- banner -->
     </div>
 
+    <!-- brand -->
     <div class="second page">
         <div class="brand">
             <div class="area">
-
+                <div class="brandBx">
+                    <img src="./images/brand_bg.jpg" alt="">
+                    <h2>BRAND</h2>
+                    <p>Garlic & Wine Specialty Dining Place 매드포갈릭 시즌별 감성테마에 마늘로 풍미를 더한 창작메뉴, 페어링 와인을 즐길 수 있는 곳 매드포갈릭입니다.</p>
+                </div>
+                <div class="introBx">
+                    <img src="./images/introduce1.png" alt="">
+                    <div class="overlay"></div>
+                    <p>BRAND INTRODUCE</p>
+                </div>
             </div>
         </div>
     </div>
 
+    <!-- food -->
     <div class="third page">
-        <!-- food -->
         <div class="food">
             <div class="area">
-                <div class="named" style="text-align: center;">
-                    <h2>NEW</h2>
-                    <p src="" alt="" style="background-color: #111; width: 100px; height: 100px; margin: 0 auto;">
-                </div>
-                
+
                 <div class="nav">
                     <ul class="menu"></ul>
                 </div>
 
                 <div class="foodBox">
-                    <div class="mm.active">
-
-                        <div class="new change">
-                            <!-- 
-                            <div class="card">
-                                <div class="imgBox">
-                                    <img src="./images/new1.jpg" alt="">
-                                </div>
-                                <div class="textBox">
-                                    <p>1</p>
-                                    <p>2</p>
-                                    <p>3</p>
-                                </div>
-                            </div> 
-                        -->
-                    </div>
-                </div>
-                <div class="mm">
-
-                    <div class="bread change"></div>
-                </div>
-                    <div class="starter change"></div>
-                    <div class="pasta change"></div>
-                    <div class="pizza change"></div>
-                    <div class="rice change"></div>
-                    <div class="steak change"></div>
-                    <div class="dessert change"></div>
-                    <div class="wine change"></div>
-                    <div class="beverage change"></div>
-                    <!-- <div class="foodImg">1</div>
-                <div class="foodImg">2</div>
-                <div class="foodImg">3</div>
-                <div class="foodImg">4</div>
-                <div class="foodImg">5</div>
-                <div class="foodImg">6</div> -->
+                   
                 </div>
 
+                <div class="pageup">
+                    <i class="fas fa-long-arrow-alt-up"></i>
+                </div>
             </div>
         </div> <!-- food -->
+    </div>
+
+    <!-- store -->
+    <div class="fourth page">
+        <div class="store">
+            <div class="area">
+                <div class="content search">
+                    <div class="imgZm"><img src="./images/store1.png" alt=""></div>
+                    <div class="textBx">
+                        <h2>SEARCH</h2>
+                        <p>매드포갈릭 매장 찾기</p>
+                    </div>
+                </div>
+                <div class="content concept">
+                    <div class="imgZm"><img src="./images/store2.png" alt=""></div>
+                    <div class="textBx">
+                        <h2>CONCEPT</h2>
+                        <p>매드포갈릭 컨셉 이미지</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- membership -->
+    <div class="fifth page">
+        <div class="membership">
+            <div class="area">
+                <div class="bgBx">
+                    <div class="imgBx"><img src="./images/membership1.jpg" alt="멤버쉽 소개"></div>
+                    <div class="textBx">
+                        <h2>MEMBERSHIP</h2>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="introBx">
+                    <div class="introCd">
+                        <img src="./images/membership2.jpg" alt="">
+                        <div class="introTxt">
+                            <h2>매드 데이</h2>
+                            <h4>매월 마지막 주 수요일! 매드한 혜택!</h4>
+                            <p>매월 단 하루, 매드포갈릭의 인기 메뉴와 독자적인<br>매드 와인을 함께 즐길 수 있는 한정 혜택입니다.</p>
+                            <button>자세히 보기</button>
+                        </div>
+                    </div>
+                    <div class="introCd">
+                        <img src="./images/membership3.jpg" alt="">
+                        <div class="introTxt">
+                            <h2>매드 리워즈</h2>
+                            <h4>다양해진 리워드 혜택</h4>
+                            <p>1회 방문 적립만 해도 메뉴 할인권 제공,<br>방문 횟수 & 누적 금액에 따라 최대 4인 식사권 혜택을 드립니다.</p>
+                            <button>자세히 보기</button>
+                        </div>
+                    </div>
+                    <div class="introCd">
+                        <img src="./images/membership4.png" alt="">
+                        <div class="introTxt">
+                            <h2>기념일 혜택</h2>
+                            <h4>생일에 즐기는 나만의 혜택</h4>
+                            <p>회원님의 생일 축하 기념으로<br>중복 사용 가능한 혜택을 드립니다.</p>
+                            <button>자세히 보기</button>
+                        </div>
+                    </div>
+                    <div class="introCd">
+                        <img src="./images/membership5.png" alt="">
+                        <div class="introTxt">
+                            <h2>리워즈 선물하기</h2>
+                            <h4>멤버십 전용 리워즈 쿠폰 선물하기</h4>
+                            <p>매드포갈릭의 리워즈 혜택을 소중한 친구에게 선물해<br>특별한 경험을 나누세요</p>
+                            <button>자세히 보기</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- contact -->
     <div class="contact">
         <div class="area">
+            
+            <div class="star">
+                <p>본 홈페이지는 상업적 목적이 아닌 개인 포트폴리오 용도입니다.</p>
+            </div>
+
             <div class="addr">
                 <p>
                     서울시 중구 동호로 15길 31, 종하빌딩 B동
@@ -255,7 +311,10 @@
         </div>
     </div> <!-- contact -->
 
-
+    <div class="scrollTop">
+        <p><i class="fas fa-chevron-up"></i></p>
+        <p><i class="fas fa-chevron-down"></i></p>
+    </div>
 
 
 </body>

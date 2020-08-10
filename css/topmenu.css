@@ -46,12 +46,15 @@
     padding: 5px 15px;
     background-color: rgb(143, 28, 28);
     color: #FFF;
+
+    /* transition: all 0.3s; */
 }
 
 .top .nav .res:hover {
     padding: 5px 15px;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(36, 23, 23);
     color: #FFF;
+    transition: all 0.3s;
 }
 
 /* ------ nav ------ */
@@ -95,7 +98,7 @@
 
 .top .nav .sub {
     position: absolute;
-    z-index: 9999;
+    z-index: 999;
     top: 80px;
     left: 0;
     width: 100%;
@@ -132,10 +135,9 @@
     line-height: 39px;
     color: #818181;
 
-    /* border-bottom: 2px solid #000; */
 }
 
-.top .nav li:hover p {
+.top .nav li:hover p, .top .nav li.on p {
     color: #111;
 }
 

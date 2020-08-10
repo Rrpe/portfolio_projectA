@@ -5,22 +5,28 @@
     width: 1400px;
     margin: 0 auto;
 
-    background-color: #dbdbdb;
-    border: 1px solid greenyellow;
+    background-color: #dddddd;
 }
 
-.food .named {
-    margin-top: 100px;
-    margin-bottom: 40px;
-}
 
 
 /* ------ nav ------ */
 .food .nav {
     position: relative;
-    /* height: 5vh; */
-    border: 1px solid blue;
+    background-color: #DDD;
+
+    border-bottom: 1px solid #999;
 }
+
+/* .food .nav.sticty {
+
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+
+    border-bottom: 0px;
+} */
 
 .food .nav .menu {
     display: flex;
@@ -29,7 +35,7 @@
 }
 
 .food .nav .menu li {
-    margin: 20px;
+    padding: 20px;
 }
 
 .food .nav .menu li p {
@@ -39,24 +45,33 @@
     cursor: pointer;
 }
 
-.food .nav .menu li p:hover, .food .nav .menu li.active p {
+.food .nav .menu li p:hover, .food .nav .menu li.on p {
     color: #111;
 }
 
-/* ---- foodBox ---- */
+/* ------ foodBox ------ */
+
+/* ----- 기본 change 박스 && card 박스 셋팅 */
 .food .foodBox .change {
     position: relative;
     width: 100%;
     /* height: 90vh; */
     padding-bottom: 40px;
-    border: 1px solid red;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+
+    border: 0px solid red;
 }
 
 .food .foodBox .change .card {
     background-color: #FFF;
     position: relative;
     width: 30%;
-    width: 420px;
+    width: 400px;
     height: 40%;
     height: 350px;
     margin: 0 20px;
@@ -66,6 +81,7 @@
     border: 0px solid gold;
 }
 
+/* ---- new 타입 ---- */
 .food .foodBox .new {
     display: flex;
     flex-wrap: wrap;
@@ -74,15 +90,77 @@
     align-content: center;
 }
 
+/* ---- bread 타입 ---- */
 .food .foodBox .bread {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
 }
+/* .food .foodBox .bread .card:last-child {
+    width: 630px;
+}
+.food .foodBox .bread .card:last-child img {
+    margin-top: -80px;
+} */
+
+/* ---- pasta 타입 ---- */
+.food .foodBox .pasta .card:nth-child(1),
+.food .foodBox .pasta .card:nth-child(2),
+.food .foodBox .pasta .card:nth-child(n+6) {
+    width: 630px;
+}
+.food .foodBox .pasta .card:nth-child(1) img,
+.food .foodBox .pasta .card:nth-child(2) img,
+.food .foodBox .pasta .card:nth-child(n+6) img {
+    margin-top: -90px;
+    height: auto;
+}
+
+/* ---- pizza 타입 */
+.food .foodBox .pizza .card:nth-child(n+4) {
+    width: 630px;
+}
+.food .foodBox .pizza .card:nth-child(n+4) img {
+    margin-top: -90px;
+    height: auto;        
+}
+
+/* ---- rice & risotto 타입 */
+.food .foodBox .rice .card:nth-child(n+4) {
+    width: 630px;
+}
+.food .foodBox .rice .card:nth-child(n+4) img {
+    margin-top: -90px;
+    height: auto;        
+}
+
+/* ---- dessert 타입 ---- */
+.food .foodBox .dessert .card {
+    width: 630px;
+}
+.food .foodBox .dessert .card img {
+    margin-top: -90px;
+    height: auto;
+}
+
+/* ---- beverage 타입 ---- */
+.food .foodBox .beverage .card:nth-child(n+4) {
+    width: 630px;
+}
+.food .foodBox .beverage .card:nth-child(n+4) img {
+    margin-top: -90px;
+    height: auto;        
+}
+
+.food .foodBox .card .imgBx {
+    height: 250px;
+    overflow: hidden;
+}
 
 .food .foodBox .card .imgBx img {
     width: 100%;
+    background-size: contain;
 }
 
 .food .foodBox .card .textBx p {
@@ -101,7 +179,7 @@
     right: 0;
     padding-right: 20px;
     padding-bottom: 20px;
-    /* padding-top: 80px; */
+    padding-top: 80px;
 }
 
 .food .foodBox span:first-child {
@@ -109,10 +187,56 @@
     bottom: 0;
 }
 
-.food .foodBox .mm {
+
+/* ------ 라벨 ------ */
+.food .named {
+    margin-top: 80px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.food .named h2 {
+    font-size: 42px;
+    font-weight: 500;
+}
+
+.food .named img {
+    width: 60px;
+    height: 60px;
+}
+
+
+/* ----- active 트리거 ------ */
+.food .trigger.active {
+    display: block;
+}
+
+.food .trigger {
     display: none;
 }
 
-.food .foodBox .mm.active {
-    display: block;
+.food .pageup {
+    width: 100%;
+    text-align: center;
+    border: 0px solid red;
+}
+
+.food .pageup .fas {
+    width: 0px;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+    font-size: 24px;
+    line-height: 50px;
+
+    cursor: pointer;
+
+    background-color: #F2F2F2;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    /* left: 0; */
 }

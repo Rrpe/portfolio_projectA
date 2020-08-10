@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+.brand .area {
+    /* position: relative; */
+    background-color: #111;
+    margin: 0 auto;
+}
+
+.brand .area .brandBx {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand .area .brandBx img {
+    width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.brand .area .brandBx h2 {
+    position: absolute;
+    color: #F2F2F2;
+    font-size: 60px;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+}
+
+.brand .area .brandBx p {
+    position: absolute;
+    margin-top: 150px;
+    color: #F2F2F2;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.brand .introBx {
+    position: relative;
+    padding-left: 20px;
+    width: 600px;
+    height: auto;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand .introBx img {
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 20px;
+}
+
+.brand .introBx .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1400px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.brand .introBx p {
+    position: absolute;
+    color: #F2F2F2;
+    font-size: 18px;
+    font-weight: 500;
+}

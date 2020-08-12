@@ -1,12 +1,15 @@
 $(function () {
-    console.log("JQ..");
 
-    $.getJSON('../json/menu.json', function (data) {
+    var $page = $('.page');
+    $page.hide();
+
+    $.getJSON('./data/menu.json', function (data) {
+        console.log("getJSON");
         $.each(data, function (index, item) {
             // console.log(index, item);
 
             // 페이지 변환
-            $('.page').each(function () {
+            $page.each(function () {
                 var $main_li_ = $('.top .nav .list > li');
 
                 $(this).hide();
@@ -20,8 +23,8 @@ $(function () {
                     // $('body .page').removeClass('active');
                     // $('body .page').eq(li_index + 1).addClass('active');
                     $('.first').hide();
-                    $('body .page').hide().removeClass('active');
-                    $('body .page').eq(li_index).show().addClass('active');
+                    $page.hide().removeClass('active');
+                    $page.eq(li_index).show().addClass('active');
 
                 });
 
@@ -79,12 +82,14 @@ $(function () {
 
             // 배너 이미지 삽입
             var $banner_imgBox = $('.banner .imgBox');
-            if (item.type2 == 'banner') {
-                /* div.append(img);
-                $imgBox.append(div);
-                img.attr("src", img_src_val); */
-                $banner_imgBox.append(banner_img_arr);
-            }
+            $banner_imgBox.each(function(){
+                if (item.type2 === 'banner') {
+                    /* div.append(img);
+                    $imgBox.append(div);
+                    img.attr("src", img_src_val); */
+                    $banner_imgBox.append(banner_img);
+                }
+            });
 
             ///// food에 menu list 추가
             var $food = $('.food');
@@ -170,6 +175,48 @@ $(function () {
                 $trigger.removeClass('active');
                 $trigger.eq(index).addClass('active');
             });
+
+            // membership
+            var $membership = $('.membership');
+            var $m_introBx = $membership.find('.introBx');
+
+            var div_introCd =
+            '<div class="introCd">' +
+                '<img src="' + item.src + '" alt="" />' +
+                '<div class="introTxt">' +
+                    '<h2>' + item.h2 + '</h2>' + 
+                    '<h4>' + item.h4 + '</h4>' +
+                    '<p>' + item.p + "</p>" + 
+                    '<button>자세히 보기</button>' +  
+                '</div>' + 
+            '</div>';
+            $m_introBx.each(function(){
+                if (item.division === "introBx") {
+                    $(this).append(div_introCd);
+                }
+            });
+            
+            // event
+            var $event = $('.event');
+            var $e_eventBx = $event.find('.eventBx');
+//----------------------------------------------
+            var div_eventCd =
+            '<div class="eventCd">' +
+                '<div class="imgBx">' +
+                '<img src="' + item.src + '" alt="" />' +
+                '</div>' +
+                '<div class="txtBx">' +
+                    '<h4>' + item.h4 + '</h4>' +
+                    '<p>' + item.p + "</p>" + 
+                    '<button>자세히 보기</button>' +  
+                '</div>' + 
+            '</div>';
+            $e_eventBx.each(function(){
+                if (item.division2 === "eventBx") {
+                    $(this).append(div_eventCd);
+                }
+            });
+
         }); // Json each
 
         // slick library slide js
@@ -184,15 +231,49 @@ $(function () {
 
     }); // getJSON
 
+    /*
+    // 새 탭에서 창 띄우기 
+    $('.top .nav .list li:nth-child(3)').click(function(){
+        var openNewWindow = window.open("about:blank");
+        openNewWindow.location.href = "https://www.madforgarlic.com/store";
+    }); 
+    $('.top .nav .list li:nth-child(3)').click(function(){
+        $(location).attr('href','https://www.madforgarlic.com/store');
+    });
+    */
+
+    // 스크롤시 메뉴 탑에 고정
+    $(window).scroll(function () {
+        //실시간으로 스크롤의 높이를 측정
+        var height = $(document).scrollTop(); 
+        var updown = $('.scrollTop i').attr('class');
+            
+        if (height > 80) {
+            $('.nav').addClass('sticty');
+            $('.scrollTop i').attr('class', updown.replace('down', 'up'));
+            // $('.food .nav.sticky')
+        } else if (height < 80) {
+            $('.nav').removeClass('sticty');
+            $('.scrollTop i').attr('class', updown.replace('up', 'down'));
+        }
+
+        $('.sticty').css({
+            'position': 'sticky',
+            'top': 0,
+            'z-index': 999,
+            'border': 0
+        });
+    });
+    
     // 스크롤 업 다운 이벤트
-    $('.fa-long-arrow-alt-up, .fa-chevron-up').on("click", function () {
-        // $('html').scrollTop(0);
+    $('.fa-chevron-up').on("click", function () {
+        console.log("up click");
         $('html').stop().animate({
             "scrollTop": 0
         }, 500);
     });
-    // var scroll_Down = $('html').scrollTop($('html').height());
     $('.fa-chevron-down').on("click", function(){
+        console.log("down click");
         $('html').stop().animate({
             "scrollTop": $('html').height()
         }, 500);
@@ -211,45 +292,15 @@ $(function () {
         });
     });
 
-    /*
-    // 새 탭에서 창 띄우기 
-    $('.top .nav .list li:nth-child(3)').click(function(){
-        var openNewWindow = window.open("about:blank");
-        openNewWindow.location.href = "https://www.madforgarlic.com/store";
-    }); 
-    $('.top .nav .list li:nth-child(3)').click(function(){
-        $(location).attr('href','https://www.madforgarlic.com/store');
-    });
-    */
+}); // jQuery
 
-    // 스크롤시 메뉴 탑에 고정
-    $(window).scroll(function () {
-        //실시간으로 스크롤의 높이를 측정
-        var height = $(document).scrollTop(); 
-            
-        if (height > 80) {
-            $('.nav').addClass('sticty');
-            // $('.food .nav.sticky')
-        } else if (height < 80) {
-            $('.nav').removeClass('sticty');
-        }
-
-        $('.sticty').css({
-            'position': 'sticky',
-            'top': 0,
-            'z-index': 999,
-            'border': 0
-        });
-
-        var updown = $('.scrollTop').find('i').attr('class');
-        if (height > 160) {
-            console.log("updown");
-
-            updown.replace('down', 'up');
-        } else if (height < 160) {
-            updown.replace('up', 'down')
-        }
-    });
-
-    
-});
+/* 
+// 모바일 웹앱
+var wid = $(window).width();
+if (wid >= 768) {
+    PC Mode Function 
+} 
+else (wid < 768) {
+    Moblie Mode Function
+} 
+*/

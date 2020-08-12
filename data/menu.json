@@ -1,0 +1,572 @@
+[
+    {
+        "type": "BRAND",
+        "text": "INTRODUCE"
+    },
+    {
+        "type": "MENU",
+        "text": "NEW",
+        "src": "./images/new_label.png"
+    },
+    {
+        "type": "MENU",
+        "text": "BREAD",
+        "src": "./images/bread_label.png"
+    },
+    {
+        "type": "MENU",
+        "text": "STARTER",
+        "src": "./images/starter_label.png"
+    },
+    {
+        "type": "MENU",
+        "text": "PASTA",
+        "src": "./images/pasta_label.png"
+    },
+    {
+        "type": "MENU",
+        "text": "PIZZA",
+        "src": "./images/pizza_label.png"
+    },
+    {
+        "type": "MENU",
+        "text": "RICE & RISOTTO",
+        "src": "./images/rice_label.png"
+    },
+    {
+        "type": "MENU",
+        "text": "STEAK",
+        "src": "./images/steak_label.png"
+    },
+    {
+        "type": "MENU",
+        "text": "DESSERT",
+        "src": "./images/dessert_label.png"
+    },
+    {
+        "type": "MENU",
+        "text": "BEVERAGE",
+        "src": "./images/beverage_label.png"
+    },
+    {
+        "type": "MENU",
+        "text": "WINE",
+        "src": "./images/wine_label.png"
+    },
+    {
+        "type": "STORE",
+        "text": "SEARCH"
+    },
+    {
+        "type": "STORE",
+        "text": "CONCEPT"
+    },
+    {
+        "type": "MEMBERSHIP",
+        "text": "멤버십 소개"
+    },
+    {
+        "type": "MEMBERSHIP",
+        "text": "멤버십 가입"
+    },
+    {
+        "type": "EVENT",
+        "text": "이벤트"
+    },
+    {
+        "type": "EVENT",
+        "text": "제휴 & 상품권"
+    },
+    {
+        "type": "EVENT",
+        "text": "MAD CHALLENGE"
+    },
+
+
+    {
+        "type2": "banner",
+        "src": "./images/banner1.jpg"
+    },
+    {
+        "type2": "banner",
+        "src": "./images/banner2.jpg"
+    },
+    {
+        "type2": "banner",
+        "src": "./images/banner3.jpg"
+    },
+    {
+        "type2": "banner",
+        "src": "./images/banner4.jpg"
+    },
+    {
+        "type2": "banner",
+        "src": "./images/banner5.jpg"
+    },
+    {
+        "type2": "banner",
+        "src": "./images/banner6.jpg"
+    },
+    {
+        "type2": "banner",
+        "src": "./images/banner7.jpg"
+    },
+    {
+        "type2": "banner",
+        "src": "./images/banner8.jpg"
+    },
+
+    
+    {
+        "type": "new",
+        "src": "./images/new1.jpg",
+        "title_ko": "갈릭 봉봉 샐러드",
+        "title_en": "(Garlic Bong Bong Salad)",
+        "price": "18,300"
+    },
+    {
+        "type": "new",
+        "src": "./images/new2.jpg",
+        "title_ko": "갈릭 스파이시 씨푸드 파스타",
+        "title_en": "(Garlic Spicy Seafood Pasta)",
+        "price": "23,800"
+    },
+    {
+        "type": "new",
+        "src": "./images/new3.jpg",
+        "title_ko": "갈릭 폭탄 치킨 피자",
+        "title_en": "(Garlic Bomb Chicken Pizza)",
+        "price": "24,800"
+    },
+    {
+        "type": "new",
+        "src": "./images/new4.jpg",
+        "title_ko": "바질 갈릭 크림 부라타 파스타",
+        "title_en": "(Basil Garlic Cream Burrata Pasta)",
+        "price": "24,800"
+    },
+    {
+        "type": "new",
+        "src": "./images/new5.jpg",
+        "title_ko": "트위스트 갈릭 스테이크",
+        "title_en": "Twist Garlic Steak",
+        "price": "54,900"
+    },
+    {
+        "type": "new",
+        "src": "./images/new6.jpg",
+        "title_ko": "프리미엄 갈릭 플레이트",
+        "title_en": "(Premium Garlic Plate)",
+        "price": "3,000"
+    },
+    {
+        "type": "bread",
+        "src": "./images/bread1.png",
+        "title_ko": "",
+        "title_en": "Garlic Pane",
+        "price": "5,900"
+    },
+    {
+        "type": "bread",
+        "src": "./images/bread2.png",
+        "title_ko": "",
+        "title_en": "Dracula Killer",
+        "price": "16,800"
+    },
+    {
+        "type": "starter",
+        "src": "./images/starter1.jpg",
+        "title_ko": "",
+        "title_en": "Melting Camembert Kale Salad",
+        "price": "18,300"
+    },
+    {
+        "type": "starter",
+        "src": "./images/starter2.jpg",
+        "title_ko": "",
+        "title_en": "Caesar Salad",
+        "price": "17,900"
+    },
+    {
+        "type": "starter",
+        "src": "./images/starter3.jpg",
+        "title_ko": "",
+        "title_en": "Mad for Garlic Dome Salad",
+        "price": "18,300"
+    },
+    {
+        "type": "starter",
+        "src": "./images/starter4.jpg",
+        "title_ko": "",
+        "title_en": "Olive Shrimp Cazuela",
+        "price": "23,800"
+    },
+    {
+        "type": "starter",
+        "src": "./images/starter5.jpg",
+        "title_ko": "",
+        "title_en": "Caprese Basil Salad",
+        "price": "17,400"
+    },
+    {
+        "type": "starter",
+        "src": "./images/starter6.jpg",
+        "title_ko": "",
+        "title_en": "Steamed Mussel",
+        "price": "23,800"
+    },
+    {
+        "type": "pasta",
+        "src": "./images/pasta1.jpg",
+        "title_ko": "",
+        "title_en": "Spicy Myeongran Oil Pasta",
+        "price": "23,800"
+    },
+    {
+        "type": "pasta",
+        "src": "./images/pasta2.png",
+        "title_ko": "",
+        "title_en": "Garlicpeno Pasta",
+        "price": "21,800"
+    },
+    {
+        "type": "pasta",
+        "src": "./images/pasta3.png",
+        "title_ko": "",
+        "title_en": "Garlic Carbonara",
+        "price": "22,800"
+    },
+    {
+        "type": "pasta",
+        "src": "./images/pasta4.jpg",
+        "title_ko": "",
+        "title_en": "Triple Garlic Pasta",
+        "price": "21,800"
+    },
+    {
+        "type": "pasta",
+        "src": "./images/pasta5.png",
+        "title_ko": "",
+        "title_en": "Arrabbiata",
+        "price": "22,800"
+    },
+    {
+        "type": "pasta",
+        "src": "./images/pasta6.jpg",
+        "title_ko": "",
+        "title_en": "Fresh Ocean Soup Pasta",
+        "price": "23,800"
+    },
+    {
+        "type": "pasta",
+        "src": "./images/pasta7.png",
+        "title_ko": "",
+        "title_en": "Crab & Lobster Pasta",
+        "price": "25,400"
+    },
+    {
+        "type": "pizza",
+        "src": "./images/pizza1.jpg",
+        "title_ko": "호박 크림 피자",
+        "title_en": "(Pumpkin Spicy Cream Pizza)",
+        "price": "21,800"
+    },
+    {
+        "type": "pizza",
+        "src": "./images/pizza2.jpg",
+        "title_ko": "초리조 & 매드 포테이토 피자",
+        "title_en": "(Chorizo & MAD Potato Pizza",
+        "price": "22,800"
+    },
+    {
+        "type": "pizza",
+        "src": "./images/pizza3.png",
+        "title_ko": "부쳐스 피자",
+        "title_en": "(Butcher's Pizza)",
+        "price": "23,800"
+    },
+    {
+        "type": "pizza",
+        "src": "./images/pizza4.png",
+        "title_ko": "갈릭 스노윙 피자",
+        "title_en": "(Garlic Snowing Pizza",
+        "price": "23,800"
+    },
+    {
+        "type": "pizza",
+        "src": "./images/pizza5.png",
+        "title_ko": "고르곤졸라 피자",
+        "title_en": "(Gorgonzola Pizza)",
+        "price": "22,800"
+    },
+    {
+        "type": "rice",
+        "src": "./images/rice1.jpg",
+        "title_ko": "",
+        "title_en": "Variety Garlic Rice",
+        "price": "23,800"
+    },
+    {
+        "type": "rice",
+        "src": "./images/rice2.png",
+        "title_ko": "",
+        "title_en": "Garlic Sizzling Rice",
+        "price": "24,800"
+    },
+    {
+        "type": "rice",
+        "src": "./images/rice3.png",
+        "title_ko": "",
+        "title_en": "Grilled Chicken & Mushroom Risotto",
+        "price": "24,800"
+    },
+    {
+        "type": "rice",
+        "src": "./images/rice4.png",
+        "title_ko": "",
+        "title_en": "Lemon Calamari Cream Risotto",
+        "price": "23,800"
+    },
+    {
+        "type": "rice",
+        "src": "./images/rice5.jpg",
+        "title_ko": "",
+        "title_en": "Dancing Salsa Rice with Beef",
+        "price": "26,800"
+    },
+    {
+        "type": "steak",
+        "src": "./images/steak1.jpg",
+        "title_ko": "",
+        "title_en": "Brussels sprouts $ Tornado Striploin Steak",
+        "price": "39,900"
+    },
+    {
+        "type": "steak",
+        "src": "./images/steak2.png",
+        "title_ko": "",
+        "title_en": "Emmental Garlic Tenderloin Steak",
+        "price": "39,900"
+    },
+    {
+        "type": "steak",
+        "src": "./images/steak3.jpg",
+        "title_ko": "",
+        "title_en": "Garlic Hug Steak",
+        "price": "39,900"
+    },
+    {
+        "type": "steak",
+        "src": "./images/steak4.png",
+        "title_ko": "",
+        "title_en": "Garlic Steak",
+        "price": "40,900"
+    },
+    {
+        "type": "steak",
+        "src": "./images/steak5.png",
+        "title_ko": "",
+        "title_en": "Herb Ribeye Steak",
+        "price": "40,900"
+    },
+    {
+        "type": "steak",
+        "src": "./images/steak6.jpg",
+        "title_ko": "",
+        "title_en": "Ribeye Steak & Riso Lobster",
+        "price": "56,300"
+    },
+    {
+        "type": "dessert",
+        "src": "./images/dessert1.png",
+        "title_ko": "",
+        "title_en": "Affogato",
+        "price": "7,500"
+    },
+    {
+        "type": "dessert",
+        "src": "./images/dessert2.jpg",
+        "title_ko": "",
+        "title_en": "Banana Crepe Pouch",
+        "price": "9,800"
+    },
+    {
+        "type": "dessert",
+        "src": "./images/dessert3.jpg",
+        "title_ko": "",
+        "title_en": "Carrot Cake",
+        "price": "9,500"
+    },
+    {
+        "type": "dessert",
+        "src": "./images/dessert4.jpg",
+        "title_ko": "",
+        "title_en": "Mille Crepe",
+        "price": "9,500"
+    },
+    {
+        "type": "beverage",
+        "src": "./images/beverage1.png",
+        "title_ko": "",
+        "title_en": "Orange Ade",
+        "price": "5,900"
+    },
+    {
+        "type": "beverage",
+        "src": "./images/beverage2.png",
+        "title_ko": "",
+        "title_en": "Lemon Ade",
+        "price": "5,900"
+    },
+    {
+        "type": "beverage",
+        "src": "./images/beverage3.png",
+        "title_ko": "",
+        "title_en": "Grapefruit Ade",
+        "price": "5,900"
+    },
+    {
+        "type": "beverage",
+        "src": "./images/beverage4.png",
+        "title_ko": "",
+        "title_en": "Red Berry Wine Cooler",
+        "price": "6,900"
+    },
+    {
+        "type": "beverage",
+        "src": "./images/beverage5.png",
+        "title_ko": "",
+        "title_en": "White Berry Wine Cooler",
+        "price": "6,900"
+    },
+
+
+
+    {
+        "type": "wine",
+        "text": "MAD WINE"
+    },
+    {
+        "type": "wine",
+        "text": "RED WINE"
+    },{
+        "type": "wine",
+        "text": "WHITE WINE"
+    },{
+        "type": "wine",
+        "text": "ROSE WINE"
+    },{
+        "type": "wine",
+        "text": "SPARKLING WINE"
+    },{
+        "type": "wine",
+        "text": "CAMPAGNE WINE"
+    },
+    {
+        "type": "wine",
+        "src": "",
+        "title_ko": "",
+        "title_en": "",
+        "price": ""
+    }
+    ,
+    {
+        "label": "new",
+        "change": "new",
+        "price": ""
+    },
+    {
+        "division": "introBx",
+        "src": "./images/membership2.jpg",
+        "h2": "매드 데이",
+        "h4": "매월 마지막 주 수요일! 매드한 혜택!",
+        "p": "매월 단 하루, 매드포갈릭의 인기 메뉴와 독자적인<br>매드 와인을 함께 즐길 수 있는 한정 혜택입니다."
+    },
+    {
+        "division": "introBx",
+        "src": "./images/membership3.jpg",
+        "h2": "매드 리워즈",
+        "h4": "다양해진 리워드 혜택",
+        "p": "1회 방문 적립만 해도 메뉴 할인권 제공,<br>방문 횟수 & 누적 금액에 따라 최대 4인 식사권 혜택을 드립니다."
+    },
+    {
+        "division": "introBx",
+        "src": "./images/membership4.png",
+        "h2": "기념일 혜택",
+        "h4": "생일에 즐기는 나만의 혜택",
+        "p": "회원님의 생일 축하 기념으로<br>중복 사용 가능한 혜택을 드립니다."
+    },
+    {
+        "division": "introBx",
+        "src": "./images/membership5.png",
+        "h2": "리워즈 선물하기",
+        "h4": "멤버십 전용 리워즈 쿠폰 선물하기",
+        "p": "매드포갈릭의 리워즈 혜택을 소중한 친구에게 선물해<br>특별한 경험을 나누세요."
+    },
+    {
+        "division2": "eventBx",
+        "src": "./images/event1.jpg",
+        "h4": "와인 구독 서비스 런칭",
+        "p": "2020-08-12 ~ 2020-09-30"
+    },
+    {
+        "division2": "eventBx",
+        "src": "./images/event2.jpg",
+        "h4": "페이코인 결제 시 50% 할인 혜택!",
+        "p": "2020-07-15 ~ 2020-08-16"
+    },
+    {
+        "division2": "eventBx",
+        "src": "./images/event3.jpg",
+        "h4": "온라인 매드 마켓",
+        "p": "2020-08-10 ~ 2020-08-15"
+    },
+    {
+        "division2": "eventBx",
+        "src": "./images/event4.jpg",
+        "h4": "8월, 여름 시즌 특별 초대권",
+        "p": "2020-08-12 ~ 2020-08-25"
+    },
+    {
+        "division2": "eventBx",
+        "src": "./images/event5.jpg",
+        "h4": "여름시즌 내맘대로 BOX",
+        "p": "2020-08-12 ~ 2020-08-25"
+    },
+    {
+        "division2": "eventBx",
+        "src": "./images/event6.jpg",
+        "h4": "딜리버리 셰프박스 출시 & 전 메뉴 15% 할인!",
+        "p": "2020-07-03 ~ 2020-09-30"
+    },
+    {
+        "division2": "eventBx",
+        "src": "./images/event7.jpg",
+        "h4": "맛있는 맥주, MAX와 함께 즐기는 매드포갈릭 피맥!",
+        "p": "2020-07-15 ~ 2020-09-09"
+    },
+    {
+        "division2": "eventBx",
+        "src": "./images/event8.jpg",
+        "h4": "여름 시즌 세트메뉴",
+        "p": "2020-06-11 ~ 2020-09-09"
+    },
+    {
+        "division2": "eventBx",
+        "src": "./images/event9.jpg",
+        "h4": "여름 시즌 와인 프로모션 안내",
+        "p": "2020-06-10 ~ 2020-09-09"
+    },
+    {
+        "division2": "eventBx",
+        "src": "./images/event10.jpg",
+        "h4": "정부 긴급 재난 지원금 사용처 안내",
+        "p": "2020-05-13 ~ 2020-08-31"
+    },
+    {
+        "division2": "eventBx",
+        "src": "./images/event11.jpg",
+        "h4": "여름 신메뉴 출시!",
+        "p": "2020-06-10 ~ 2020-09-09"
+    }
+]

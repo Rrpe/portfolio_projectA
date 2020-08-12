@@ -52,3 +52,7 @@ img {
     font-size: 20px;
     cursor: pointer;
 }
+
+.page {
+    display: none;
+}

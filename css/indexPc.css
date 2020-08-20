@@ -1,0 +1,1244 @@
+@charset "UTF-8";
+
+/* ■■■■■■ 공용 area ■■■■■■ */
+.area {
+    max-width: 1400px;
+    background-color: #BFBFBF;
+}
+
+/* ■■■■■■■■■■■■■■■■■■■■■■■■ scrollTop ■■■■■■■■■■■■■■■■■■■■■■■■ */
+.scrollTop {
+    position: fixed;
+    z-index: 999;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #FCFCFC;
+
+    text-align: center;
+}
+
+.scrollTop p i {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* ■■■■■■ 메뉴 항목 page 숨기기 ■■■■■■ */
+.page {
+    display: none;
+}
+
+/* ■■■■■■ INSPIRED BY GARLIC ■■■■■■ */
+.tt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tt p {
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 500;
+    margin: 16px 0;
+}
+
+/* ■■■■■■■■■■■■■■■■■■■■■■■■ topmenu ■■■■■■■■■■■■■■■■■■■■■■■■ */
+.top.on {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+
+.top .area {
+    /* position: relative; */
+    height: 80px;
+    margin: 0 auto;
+
+    background-color: #FFF;
+    display: flex;
+    
+    border: 0px solid black;
+}
+
+/* ------ logo ------ */
+.top .logo {
+    margin-left: 20px;
+    flex: 1;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    border: 0px solid red;
+}
+
+.top .logo img {
+    width: 70%;
+    height: auto;
+    border: 0px solid red;
+}
+
+/* ------ 예약 버튼 ------ */
+.top .nav .res {
+    padding: 5px 15px;
+    background-color: rgb(143, 28, 28);
+    color: #FFF;
+
+    /* transition: all 0.3s; */
+}
+
+.top .nav .res:hover {
+    padding: 5px 15px;
+    background-color: rgb(36, 23, 23);
+    color: #FFF;
+    transition: all 0.3s;
+}
+
+/* ------ nav ------ */
+.top .nav {
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0px solid blue;
+}
+
+.top .nav .list {
+    /* width: 100%; */
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 0px solid gold;
+}
+
+.top .nav .list li {
+    display: block;
+    height: 100%;
+    padding: 0 30px;
+    padding: 0 1.563vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    border: 0px solid red;
+}
+
+.top .nav .list > li > p {
+    font-size: 16px;
+    /* font-size: 0.833vw; */
+    font-weight: 600;
+    color: rgb(129, 129, 129);
+}
+
+.top .nav .sub {
+    position: absolute;
+    z-index: 999;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    /* height: 40px; */
+    background-color: #FFF;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    border: 0px solid red;
+    border-top: 1px solid lightgrey;
+}
+
+.top .nav .sub li {
+    height: auto;
+    margin: 0px 20px;
+    margin: 0 1.042vw;
+    padding: 10px 0px;
+    cursor: pointer;
+    
+    border-bottom: 2px solid #FFF;
+}
+
+.top .nav .sub li:hover {
+    
+    border-bottom: 2px solid #111;
+}
+
+.top .nav .sub p {
+    
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 39px;
+    color: #818181;
+
+}
+
+.top .nav li:hover p, .top .nav li.on p {
+    color: #111;
+}
+
+/* ------ sign ------ */
+.top .sign {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0px solid green;
+}
+
+.top .sign .list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top .sign .list li {
+    padding: 0 10px;
+    padding: 0 0.521vw;
+}
+
+.top .sign .list li a {
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.top .sign .list li:hover a {
+    color: #818181;
+}
+
+.top .sign .ver_line {
+    width: 1px;
+    height: 11px;
+    background-color: black;
+    margin-top: 4px;
+}
+
+.top .logo .fa-bars,
+.top .m_sign {
+    display: none;
+}
+
+/* ■■■■■■■■■■■■■■■■■■■■■■■■ banner ■■■■■■■■■■■■■■■■■■■■■■■■ */
+.banner .area {
+    height: auto;
+    margin: 0 auto;
+    /* background-color: #FFF; */
+}
+
+.banner .imgBox {
+    width: 100%;
+    height: 100%;
+}
+
+.banner .imgBox img {
+    width: 100%;
+
+    background-color: #ff0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* ■■■■■■ slick library js ■■■■■■ */
+.slick-prev {
+    z-index: 100;
+    left: 10px;
+}
+
+[dir='rtl'].slick-prev {
+    right: 10px;
+    left: auto;
+}
+
+.slick-next {
+    right: 10px;
+}
+
+[dir='rtl'].slick-next {
+    right: auto;
+    left: 10px;
+}
+
+.slick-prev:before {
+    content: url(../images/chevron-left-solid.svg);
+}
+
+[dir='rtl'] .slick-prev:before {
+    content: url(../images/chevron-right-solid.svg);
+}
+
+.slick-next:before {
+    content: url(../images/chevron-right-solid.svg);
+}
+
+[dir='rtl'] .slick-next:before {
+    content: url(../images/chevron-left-solid.svg);
+}
+
+.slick-dotted.slick-slider
+{
+    margin-bottom: 0px;
+}
+
+.slick-dots {
+    bottom: 0px;
+}
+
+.slick-dots li {
+    margin: 0 25px;
+}
+
+.slick-dots li button:before {
+    width: 60px;
+    height: 5px;
+
+    line-height: 0;
+    background-color: #111;
+    content: '';
+}
+
+/* ■■■■■■■■■■■■■■■■■■■■■■■■ brand ■■■■■■■■■■■■■■■■■■■■■■■■ */
+.brand .area {
+    /* position: relative; */
+    background-color: #111;
+    margin: 0 auto;
+}
+
+.brand .area .brandBx {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand .area .brandBx img {
+    width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.brand .brandBx .b_Bx {
+    position: absolute;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand .area .brandBx h2 {
+    color: #F2F2F2;
+    font-size: 60px;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+}
+
+.brand .area .brandBx p {
+    color: #F2F2F2;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.brand .introBx {
+    position: relative;
+    padding-left: 20px;
+    width: 600px;
+    height: auto;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand .introBx img {
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 20px;
+}
+
+.brand .introBx .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 1400px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.brand .introBx p {
+    position: absolute;
+    color: #F2F2F2;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+/* ■■■■■■■■■■■■■■■■■■■■■■■■ menu ■■■■■■■■■■■■■■■■■■■■■■■■ */
+.food .area {
+    position: relative;
+    margin: 0 auto;
+
+    background-color: #dddddd;
+}
+
+/* ------ nav ------ */
+.food .nav {
+    position: relative;
+    background-color: #DDD;
+
+    border-bottom: 1px solid #999;
+}
+
+/* .food .nav.sticty {
+
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+
+    border-bottom: 0px;
+} */
+
+.food .nav .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.food .nav .menu li {
+    padding: 20px;
+}
+
+.food .nav .menu li p {
+    color: #818181;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.food .nav .menu li p:hover, .food .nav .menu li.on p {
+    color: #111;
+}
+
+/* ------ foodBox ------ */
+
+/* ----- 기본 change 박스 && card 박스 셋팅 */
+.food .foodBox .change {
+    position: relative;
+    width: 100%;
+    /* height: 90vh; */
+    padding-bottom: 40px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+
+    border: 0px solid red;
+}
+
+.food .foodBox .change .card {
+    background-color: #FFF;
+    position: relative;
+    width: 30%;
+    width: 400px;
+    /* width: 20.833vw; */
+
+    height: 40%;
+    height: 350px;
+    /* height: 18.229vw; */
+
+    margin: 0 20px;
+    margin-top: 40px;
+
+    box-shadow: 0px 1px 10px #818181;
+    border: 0px solid gold;
+}
+@media screen and (min-width:1400px) {
+
+    /* ---- new 타입 ---- */
+    .food .foodBox .new {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        align-content: center;
+    }
+    
+    /* ---- bread 타입 ---- */
+    .food .foodBox .bread {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    /* .food .foodBox .bread .card:last-child {
+        width: 630px;
+    }
+    .food .foodBox .bread .card:last-child img {
+        margin-top: -80px;
+    } */
+    
+    /* ---- pasta 타입 ---- */
+    .food .foodBox .pasta .card:nth-child(1),
+    .food .foodBox .pasta .card:nth-child(2),
+    .food .foodBox .pasta .card:nth-child(n+6) {
+        width: 630px;
+    }
+    .food .foodBox .pasta .card:nth-child(1) img,
+    .food .foodBox .pasta .card:nth-child(2) img,
+    .food .foodBox .pasta .card:nth-child(n+6) img {
+        margin-top: -90px;
+        height: auto;
+    }
+    
+    /* ---- pizza 타입 */
+    .food .foodBox .pizza .card:nth-child(n+4) {
+        width: 630px;
+    }
+    .food .foodBox .pizza .card:nth-child(n+4) img {
+        margin-top: -90px;
+        height: auto;        
+    }
+    
+    /* ---- rice & risotto 타입 */
+    .food .foodBox .rice .card:nth-child(n+4) {
+        width: 630px;
+    }
+    .food .foodBox .rice .card:nth-child(n+4) img {
+        margin-top: -90px;
+        height: auto;        
+    }
+    
+    /* ---- dessert 타입 ---- */
+    .food .foodBox .dessert .card {
+        width: 630px;
+    }
+    .food .foodBox .dessert .card img {
+        margin-top: -90px;
+        height: auto;
+    }
+    
+    /* ---- beverage 타입 ---- */
+    .food .foodBox .beverage .card:nth-child(n+4) {
+        width: 630px;
+    }
+    .food .foodBox .beverage .card:nth-child(n+4) img {
+        margin-top: -90px;
+        height: auto;        
+    }
+}  /* @media Call */
+    
+    
+    .food .foodBox .card .imgBx {
+        height: 250px;
+        overflow: hidden;
+    }
+    
+    .food .foodBox .card .imgBx img {
+        width: 100%;
+        background-size: contain;
+    }
+    
+    .food .foodBox .card .textBx p {
+        font-size: 14px;
+        padding: 1px 0;
+        padding-left: 20px;
+    }
+    
+    .food .foodBox .card .textBx p:first-child {
+    padding-top: 15px;
+}
+
+.food .foodBox .card .textBx p:last-child {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-top: 80px;
+}
+
+.food .foodBox span:first-child {
+    position: absolute;
+    bottom: 0;
+}
+
+
+/* ------ 라벨 ------ */
+.food .named {
+    margin-top: 80px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.food .named h2 {
+    font-size: 42px;
+    font-weight: 500;
+}
+
+.food .named img {
+    width: 60px;
+    height: 60px;
+}
+
+
+/* ----- active 트리거 ------ */
+.food .trigger.active {
+    display: block;
+}
+
+.food .trigger {
+    display: none;
+}
+
+.food .pageup {
+    width: 100%;
+    text-align: center;
+    border: 0px solid red;
+}
+
+.food .pageup .fas {
+    width: 0px;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+    font-size: 24px;
+    line-height: 50px;
+
+    cursor: pointer;
+
+    background-color: #F2F2F2;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    /* left: 0; */
+}
+/* ■■■■■■■■■■■■■■■■■■■■■■■■ store ■■■■■■■■■■■■■■■■■■■■■■■■ */
+.store .area {
+    position: relative;
+
+    height: auto;
+    margin: 0 auto;
+}
+
+.store .secondary {
+    display: flex;
+}
+
+.store .content {
+    position: relative;
+    width: 700px;
+    height: 700px;
+    margin-bottom: 25px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+@media screen and (min-width:1400px) {
+    .store .content {
+        position: relative;
+        width: 700px;
+        height: 720px;
+        
+        margin-bottom: 25px;
+        overflow: hidden;
+        cursor: pointer;
+    }
+
+    .store .content .imgZm img{
+        width: 100%;    
+    
+        background-position: center top;
+        background-size: cover;
+        background-repeat: no-repeat;
+    
+        transition: all 0.3s;
+    }
+}
+
+.store .content .imgZm img{
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    transition: all 0.3s;
+}
+
+.store .content:hover img {
+    transform: scale(1.1);
+}
+
+.store .content .textBx {
+    position: absolute;
+    z-index: 900;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: #F2F2F2;
+}
+
+.store .content .textBx h2 {
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.store .content .textBx p {
+    font-size: 15px;
+    font-weight: 400;   
+}
+
+/* ■■■■■■■■■■■■■■■■■■■■■■■■ membership ■■■■■■■■■■■■■■■■■■■■■■■■ */
+.membership .area {
+    margin: 0 auto;
+
+    background-color: "#DDD";
+    /* height: 400px; */
+    
+    /* border: 1px solid red; */
+}
+
+.membership .bgBx {
+    position: relative;
+
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.membership img {
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.membership .bgBx .textBx {
+    position: absolute;
+    z-index: 900;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    text-align: center;
+    color: #F2F2F2;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.membership .bgBx .textBx h2 {
+    font-size: 50px;
+    font-weight: 500;
+    letter-spacing: 0.35em;
+}
+
+.membership .bgBx .textBx p::before {
+    content: '더매드리워즈 회원에게만 제공드리는 다양한 특전, 회원 전용 프로모션, 회원만이 누릴 수 있는 혜택을 만날 수 있습니다.';
+}
+
+.membership .bgBx .textBx p {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.membership .introBx {
+    position: relative;
+    /* width: 80%; */
+    height: auto;
+    margin: 0 auto;
+    margin-top: 25px;
+    padding-bottom: 25px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.membership .introBx .introCd {
+    width: 350px;
+    width: 45%;
+    height: 350px;
+    height: 35.146vw;
+    background-color: #F2F2F2;
+    /* margin: 25px auto; */
+}
+
+.membership .introBx .introCd img {
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.membership .introBx .introCd:nth-child(2n) {
+    border-left: 1px solid #bfbfbf;
+}
+
+.membership .introBx .introCd .introTxt {
+    padding: 10px 15px;
+}
+
+.membership .introBx .introCd .introTxt h2 {
+    color: #111;
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.membership .introBx .introCd .introTxt h4 {
+    color: goldenrod;
+}
+
+.membership .introBx .introCd .introTxt p {
+    font-size: 1.366vw;
+    padding: 12px 0;
+    color: #818181;
+}
+
+.membership .introBx .introCd .introTxt button {
+    margin-top: 10px;
+    padding: 6px 18px;
+    color: #F2F2F2;
+    background-color: #111;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    transition: all 0.2s;
+}
+
+.membership .introBx .introCd .introTxt button:hover {
+    background-color: goldenrod;
+}
+
+
+@media screen and (min-width:1400px) {
+    .membership .introBx {
+        position: relative;
+        width: 1300px;
+        height: auto;
+        margin: 0 auto;
+        margin-top: 25px;
+        padding-bottom: 25px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .membership .introBx .introCd {
+        width: 650px;
+        height: 450px;
+        margin: 0;
+        background-color: #F2F2F2;
+    }
+
+    .membership .introBx .introCd .introTxt p {
+        font-size: 16px;
+        padding: 12px 0;
+        color: #818181;
+    }
+}
+
+/* ■■■■■■■■■■■■■■■■■■■■■■■■ event ■■■■■■■■■■■■■■■■■■■■■■■■ */
+.event .area {
+    margin: 0 auto;
+}
+
+.event .eventBx .eventCd {
+    background-color: #929292;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+.event .eventBx .eventCd:nth-child(2n) {
+    background-color: #111111;
+}
+
+.event .eventBx .eventCd .imgBx {
+    margin-left: 100px;
+    width: 350px;
+}
+
+.event .eventBx .eventCd .imgBx img {
+    width: 100%;
+    height: 100%;
+
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.event .eventBx .eventCd .txtBx {
+    width: 400px;
+    color: #F2F2F2;
+    padding-top: 60px;
+    padding-left: 30px;
+}
+
+.event .eventBx .eventCd .txtBx p {
+    padding-top: 15px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.event .eventBx .eventCd .txtBx button {
+    margin-top: 30px;
+    padding: 6px 18px;
+    font-weight: 500;
+    color: #111111;
+    background-color: #F2F2F2;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    transition: all 0.2s;
+}
+
+.event .eventBx .eventCd button:hover {
+    background-color: #111111;
+    color: #F2F2F2;
+}
+
+.event .eventBx .eventCd:nth-child(2n) button:hover {
+    background-color: #5c5c5c;
+}
+
+/* ■■■■■■■■■■■■■■■■■■■■■■■■ contact ■■■■■■■■■■■■■■■■■■■■■■■■ */
+.contact .area {
+    position: relative;
+    margin: 0 auto;
+
+    background-color: #FFF;
+
+    border: 0px solid purple;
+}
+
+.contact .addr {
+    margin: 40px 0;
+    padding-left: 10px;
+    text-align: left;
+}
+
+.contact .addr p {
+    color: #111;
+    font-size: 16px;
+    font-weight: 400;
+    
+}
+
+.contact .sns {
+    width: 100%;
+    height: auto;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.contact .sns a {
+    margin-right: 24px;
+
+    font-size: 22px;
+    line-height: 1.2;
+
+    cursor: pointer;
+    transition: all 0.1s;
+}
+
+.contact .sns a:hover {
+    color: #818181;
+}
+
+.contact .bot {
+    margin: 30px 0;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact .bot .left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact .bot .left li {
+    padding: 0 10px;
+}
+
+.contact .bot .left a {
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.contact .bot .left li:first-child a {
+    font-weight: 600;
+}
+
+.contact .bot .left li:hover a {
+    color: #818181;
+}
+
+.contact .bot .right {
+    display: flex;
+}
+
+.contact .bot .right a {
+    margin-right: 30px;
+    font-size: 18px;
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+.contact .ver_line {
+    width: 1px;
+    height: 11px;
+    background-color: black;
+    margin-top: 4px;
+}
+
+.contact .gongback {
+    width: 100%;
+    height: 20px;
+}
+
+.contact .star {
+    margin: 10px;
+}
+.contact .star p {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+/* ■■■■■■■■■■■■■■■■■■■■■■■■ 로그인 페이지 ■■■■■■■■■■■■■■■■■■■■■■■■ */
+.login {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-image: url('../images/login_bg2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.login .area {
+    max-width: 800px;
+    height: 100vh;
+    margin: 0 auto;
+
+    background-color: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login .cardBx {
+    position: relative;
+    width: auto;
+    height: auto;
+
+    background-color: rgba(207, 207, 207, 0.9);
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login .cardBx .logoBx {
+    margin: 50px 100px;
+}
+
+.login .cardBx .id_chk {
+    margin-right: 250px;
+    padding: 5px 0;
+}
+
+/* 체크박스 css 수정 */
+.login .cardBx .id_chk input[type="checkbox"] {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0
+}
+
+.login .cardBx .id_chk input[type="checkbox"]+label {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.login .cardBx .id_chk input[type="checkbox"]+label:before {
+    content: ' ';
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    margin: -2px 8px 0 0;
+    text-align: center;
+    vertical-align: middle;
+    background: #111;
+    border: 1px solid #cacece;
+    border-radius: 3px;
+}
+
+.login .cardBx .id_chk input[type="checkbox"]:checked+label:before {
+    content: '\2713';
+    color: #FFF;
+    text-shadow: 1px 1px white;
+    background: #111;
+    border-color: #adb8c0;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+
+}   /* 체크박스 css 수정 */
+
+.login .cardBx .id_chk label {
+    font-weight: 500;
+}
+
+.login .cardBx .lgBx {
+    margin: 0 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.login .cardBx .lgBx input {
+    font-family: sans-serif;
+    font-size: 14px;
+    width: 350px;
+    padding: 10px;
+    outline: none;
+}
+
+.login .cardBx .findBx {
+    margin: 15px 0;
+}
+
+.login .cardBx .findBx a {
+    font-size: 14px;
+    margin: 0 10px;
+}
+
+.login .cardBx .findBx a:hover {
+    font-weight: 700;
+}
+
+.login .cardBx .lgBtn {
+    margin: 0 0 10px 0;
+    width: 350px;
+}
+
+.login .cardBx .lgBtn input {
+    width: 350px;
+    padding: 10px;
+
+    background-color: #111;
+    color: #FFF;
+    font-size: 14px;
+
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    transition: all 0.1s;
+}
+
+.login .cardBx .lgBtn input:hover {
+    background-color: goldenrod;
+    background-color: #616161;
+}
+
+.login .cardBx .error p {
+    color: #F00;
+    font-size: 14px;
+    margin-right: 70px;
+}
+
+.login .cardBx .snsBtn {
+    margin: 30px 0 50px 0;
+}
+
+.login .cardBx .back {
+    position: absolute;
+    z-index: 1000;
+    top: 20px;
+    left: 20px;
+}
+
+.login .cardBx .back i {
+    color: #111;
+    font-size: 2rem;
+
+    transition: all 0.1s;
+    cursor: pointer;
+}
+
+.login .cardBx .back i:hover {
+    color: #616161;
+}
+
+/* ■■■■■■■■■■■■■■■■■■■■■■■■ 회원가입 ■■■■■■■■■■■■■■■■■■■■■■■■ */
+.join {
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.join .area {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.join .cardBx {
+    width: auto;
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* ■■■■■■■■■■■■■■■■■■■■■■■■ Mobile 전용 hide 처리 ■■■■■■■■■■■■■■■■■■■■■■■■ */
+.mob {
+    display: none;
+}

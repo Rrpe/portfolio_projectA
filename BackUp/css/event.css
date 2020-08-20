@@ -1,0 +1,62 @@
+.event .area {
+    margin: 0 auto;
+}
+
+.event .eventBx .eventCd {
+    background-color: #929292;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+.event .eventBx .eventCd:nth-child(2n) {
+    background-color: #111111;
+}
+
+.event .eventBx .eventCd .imgBx {
+    margin-left: 100px;
+    width: 350px;
+}
+
+.event .eventBx .eventCd .imgBx img {
+    width: 100%;
+    height: 100%;
+
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.event .eventBx .eventCd .txtBx {
+    width: 400px;
+    color: #F2F2F2;
+    padding-top: 60px;
+    padding-left: 30px;
+}
+
+.event .eventBx .eventCd .txtBx p {
+    padding-top: 15px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.event .eventBx .eventCd .txtBx button {
+    margin-top: 30px;
+    padding: 6px 18px;
+    font-weight: 500;
+    color: #111111;
+    background-color: #F2F2F2;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    transition: all 0.2s;
+}
+
+.event .eventBx .eventCd button:hover {
+    background-color: #111111;
+    color: #F2F2F2;
+}
+
+.event .eventBx .eventCd:nth-child(2n) button:hover {
+    background-color: #5c5c5c;
+}

@@ -15,11 +15,10 @@
 }
 
 body {
-    background-color: #FFF;
+    background-color: #FFF;   
 }
 
-ol,
-ul {
+ol, ul {
     list-style: none;
 }
 
@@ -32,4 +31,42 @@ a {
 img {
     border: none;
     outline: none;
+}
+
+.area {
+    max-width: 1400px;
+    background-color: #BFBFBF;
+}
+
+.scrollTop {
+    position: fixed;
+    z-index: 999;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #FCFCFC;
+
+    text-align: center;
+}
+
+.scrollTop p i {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.page {
+    display: none;
+}
+
+.tt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tt p {
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 500;
+    margin: 16px 0;
 }

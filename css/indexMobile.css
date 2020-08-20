@@ -1,0 +1,601 @@
+@charset "UTF-8";
+
+@media screen and (max-width:767px) {
+    :root {
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    :root {
+        font-size: 14px;
+    }
+}
+
+.area {
+    max-width: 1023px;
+    background-color: #e9e9e9;
+}
+
+img {
+    border: 0;
+    width: 100%;
+}
+
+.page {
+    display: none;
+}
+
+.m_overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 990;
+
+    background-color: rgba(0, 0, 0, 0.4);
+
+    display: none;
+}
+
+/* ■■■■■■ INSPIRED BY GARLIC ■■■■■■ */
+.tt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tt p {
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 500;
+    margin: 16px 0;
+}
+
+/* ■■■■■■■■■■■■■■■■■■■■■■■■ topmenu ■■■■■■■■■■■■■■■■■■■■■■■■ */
+.top .area {
+    background-color: #FFF;
+}
+
+.top .area .logo {
+    padding: 1rem 1rem 0.5rem;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top .area .logo img {
+    margin-left: 1rem;
+    width: 120px;
+}
+
+.top .area .logo p {
+    font-size: 2.5rem;
+    margin-right: 1rem;
+}
+
+.top .nav {
+    position: fixed;
+    z-index: 999;
+    width: 90%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    right: -90%;
+    text-align: center;
+    background-color: rgb(253, 253, 253);
+}
+
+.top .nav .m_sign .m_log {
+    text-align: center;
+
+    display: flex;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.top .nav .m_sign .m_log li {
+    flex: 1;
+    margin: 0.6rem 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.top .nav .m_sign .m_log li:first-child {
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.top .nav .m_sign .m_log i {
+    padding-right: 5px;
+}
+
+.top .nav .m_sign .m_list,
+.m_list2 {
+    text-align: left;
+}
+
+.top .nav .m_sign .m_list li,
+.top .nav .m_sign .m_list2 li {
+    padding: 10px 8px;
+    padding: 1.2rem 1rem;
+}
+
+.top .nav .m_sign .m_list p,
+.top .nav .m_sign .m_list a {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #444;
+}
+
+/* ■■■■■■■■■■■■■■■■■■■■■■■■ banner ■■■■■■■■■■■■■■■■■■■■■■■■ */
+.banner .imgBox {
+    width: 100%;
+    height: auto;
+
+    overflow: hidden;
+}
+
+.banner .imgBox img {
+    width: 150%;
+    height: 75vh;
+
+    background-size: cover;
+    background-position: center;
+}
+
+.banner .m_main1 {
+    position: relative;
+    width: 100%;
+    /* height: auto; */
+    overflow: hidden;
+}
+
+.banner .m_main1 .imgBox2 {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .m_main1 img {
+    width: 130%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.banner .m_main1 h2 {
+    position: absolute;
+
+    color: #F2F2F2;
+    font-size: 2.5rem;
+    letter-spacing: 0.3em;
+}
+
+.banner .m_main1 .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.banner .m_main2 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .m_main2 img {
+    width: 130%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.banner .m_main2 h2 {
+    position: absolute;
+
+    color: #F2F2F2;
+    font-size: 2rem;
+    letter-spacing: 0.06em;
+}
+
+.banner .m_main2 .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.banner .mob {
+    margin-top: 1.6rem;
+}
+
+/* ■■■■■■■■■■■■■■■■■■■■■■■■ brand ■■■■■■■■■■■■■■■■■■■■■■■■ */
+.brand .brandBx {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+
+    margin-bottom: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand .brandBx img {
+    width: 150%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.brand .brandBx .b_Bx {
+    position: absolute;
+    z-index: 990;
+    width: 80%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand .brandBx h2 {
+    color: #F2F2F2;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+}
+
+.brand .brandBx p {
+    color: #F2F2F2;
+    font-size: 1.25rem;
+}
+
+.brand .introBx {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding-bottom: 2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand .introBx img {
+    width: 120%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.brand .introBx .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.brand .introBx p {
+    position: absolute;
+    z-index: 990;
+    color: #F2F2F2;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+}
+
+/* ■■■■■■■■■■■■■■■■■■■■■■■■ menu ■■■■■■■■■■■■■■■■■■■■■■■■ */
+.food .nav {
+    position: relative;
+    width: 100%;
+
+    background-color: #FFF;
+    overflow: auto; /* 모바일 터치 슬라이드 1 */
+
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.food .nav .menu {
+    position: relative;
+    width: 100%;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    -webkit-overflow-scrolling: touch;   /* 모바일 터치 슬라이드 2 */
+    -ms-overflow-style: -ms-autohiding-scrollbar;    /* 모바일 터치 슬라이드 3 */
+}
+
+.food .nav .menu li {
+    padding: 4px 30px;
+}
+
+.food .nav .menu li.on p {
+    font-weight: 700;
+}
+
+.food .nav .menu li p {
+    font-size: 1.5rem;
+}
+
+.food .trigger.active {
+    display: block;
+}
+
+.food .trigger {
+    display: none;
+}
+
+.food .foodBox .change .card {
+    background-color: #FFF;
+    position: relative;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.food .foodBox .change .card:last-child {
+    border-bottom: 2rem solid rgba(0, 0, 0, 0.1);
+}
+
+.food .foodBox .change .card .textBx {
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-align: center;
+    padding: 0.8rem 0;
+}
+
+
+/* ■■■■■■■■■■■■■■■■■■■■■■■■ store ■■■■■■■■■■■■■■■■■■■■■■■■ */
+.store .content {
+    position: relative;
+    width: 100%;
+}
+
+.store .content .textBx {
+    position: absolute;
+    z-index: 900;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: #F2F2F2;
+}
+
+.store .content .textBx h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+}
+
+.store .content .textBx p {
+    font-size: 1.25rem;
+}
+
+/* ■■■■■■■■■■■■■■■■■■■■■■■■ membership ■■■■■■■■■■■■■■■■■■■■■■■■ */
+.membership .bgBx {
+    position: relative;
+
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.membership img {
+    width: 150%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.membership .bgBx .textBx {
+    position: absolute;
+    z-index: 900;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    text-align: center;
+    color: #F2F2F2;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.membership .bgBx .textBx h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+}
+
+.membership .bgBx .textBx p {
+    width: 80%;
+    font-size: 1.25rem;
+}
+
+.membership .bgBx .textBx p::before {
+    content: '더매드리워즈 회원에게만 제공드리는 다양한 특전, 회원 전용 프로모션, 회원만이 누릴 수 있는 혜택을 만날 수 있습니다.';
+}
+
+.membership .introBx .introCd {
+    background-color: #FFF;
+    margin: 1.5rem 0;
+    text-align: center;
+}
+
+.membership .introBx .introCd:last-child {
+    border-bottom: 1.5rem solid rgba(0, 0, 0, 0.1);
+}
+
+.membership .introBx .introCd .introTxt {
+    padding: 1rem 0;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.membership .introBx .introCd .introTxt h2 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.membership .introBx .introCd .introTxt h4 {
+    font-size: 1.5rem;
+    color: goldenrod;
+}
+
+.membership .introBx .introCd .introTxt p {
+    font-size: 1.2rem;
+    color: #818181;
+    padding: 0.5rem 0;
+}
+
+.membership .introBx .introCd .introTxt button {
+    margin-top: 10px;
+    padding: 6px 18px;
+    color: #F2F2F2;
+    background-color: #111;
+    border: none;
+    outline: none;
+}
+
+/* ■■■■■■■■■■■■■■■■■■■■■■■■ event ■■■■■■■■■■■■■■■■■■■■■■■■ */
+.membership .introBx .introCd .introTxt {
+}
+
+.event .eventBx .eventCd .txtBx {
+    padding: 1rem 0;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.event .eventBx .eventCd .txtBx h4 {
+    font-size: 1.5rem;
+}
+
+.event .eventBx .eventCd .txtBx p {
+    font-size: 1.3rem;
+    color: #818181;
+    padding: 0.5rem 0;
+}
+
+.event .eventBx .eventCd .txtBx button {
+    margin-top: 10px;
+    padding: 6px 18px;
+    color: #F2F2F2;
+    background-color: #111;
+    border: none;
+    outline: none;
+}
+
+
+/* ■■■■■■■■■■■■■■■■■■■■■■■■ login ■■■■■■■■■■■■■■■■■■■■■■■■ */
+
+
+/* ■■■■■■■■■■■■■■■■■■■■■■■■ sign ■■■■■■■■■■■■■■■■■■■■■■■■ */
+
+
+/* ■■■■■■■■■■■■■■■■■■■■■■■■ contact ■■■■■■■■■■■■■■■■■■■■■■■■ */
+.contact {
+    max-width: 767px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact .area {
+    background-color: #FFF;
+}
+
+.contact .star {
+    margin: 1rem 2rem;
+    font-size: 1.4em;
+    font-weight: 700;
+}
+
+.contact .m_addr {
+    margin-bottom: 1rem;
+}
+
+.contact .m_addr p {
+    margin: 0.5rem 0;
+    font-size: 1.1em;
+}
+
+.contact .sns a {
+    font-size: 1.8rem;
+    margin: 0.9rem 1.8rem;
+}
+
+.contact .bot .left {
+    width: 80%;
+    margin: 1rem auto 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contact .bot .left li {
+    width: 50%;
+    padding: 0.7rem 1rem;
+}
+
+.contact .bot .left li a {
+    font-size: 1.1rem;
+}
+
+.contact .bot .left li .bold {
+    font-weight: 700;
+}
+
+.contact .bot .right {
+    margin: 1rem auto 2rem;
+}
+
+.contact .bot .right a {
+    padding: 0 1.5rem;
+
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+
+/* ■■■■■■■■■■ none 처리 ■■■■■■■■■■ */
+.scrollTop,
+.contact .addr,
+.top .nav .res,
+.top .sign,
+.top .nav .list,
+.contact .bot .ver_line,
+/* .food .nav .menu, */
+.food .foodBox .named {
+    display: none;
+}
